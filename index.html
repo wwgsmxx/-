@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Agro Project - Full Version</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header -->
+        <div class="app-header">
+            <div class="logo">
+                <div class="logo-icon">🌱</div>
+                <span>SMART AGRO SYSTEM PRO</span>
+            </div>
+            <div style="color: #555; font-size: 0.9rem; font-weight: 600;">Секция: Информатика және Робототехника</div>
+        </div>
+
+        <!-- Slides Viewport -->
+        <div class="slide-viewport">
+
+            <!-- Slide 1: Title -->
+            <div class="slide active">
+                <div class="center-layout">
+                    <span style="background: #dcfce7; color: #15803d; padding: 8px 20px; border-radius: 20px; font-weight: 700; margin-bottom: 20px; font-size: 0.9rem;">2026 ЖЫЛҒЫ ҒЫЛЫМИ-ЗЕРТТЕУ ЖҰМЫСЫ</span>
+                    
+                    <h1 style="font-size: 2.5rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">Жасанды интеллект элементтері<br>негізінде "Smart" жылыжайды<br>басқару</h1>
+                    
+                    <p style="max-width: 800px; margin: 10px auto; font-size: 1.1rem; line-height: 1.5; color: #555;">
+                        <strong>Жобаның тақырыбы:</strong> Arduino микроконтроллері және IoT технологияларын қолдана отырып, 
+                        автоматтандырылған энергия тиімді жылыжай кешенін жобалау.
+                    </p>
+
+                    <div style="display: flex; gap: 30px; margin-top: 40px; justify-content: center; width: 100%;">
+                        <div class="info-card-clean" style="text-align: left; padding: 15px 25px; width: auto; min-width: 280px;">
+                            <strong style="color: var(--primary); font-size: 0.9rem;">Орындаған:</strong>
+                            <div style="font-size: 1.1rem; font-weight: bold; margin-top: 5px;">Бектібай Хантемір</div>
+                            <div style="font-size: 0.9rem; color: #555;">9 «Е» Сыныбы</div>
+                        </div>
+                        <div class="info-card-clean" style="text-align: left; padding: 15px 25px; width: auto; min-width: 280px;">
+                            <strong style="color: var(--primary); font-size: 0.9rem;">Ғылыми Жетекші:</strong>
+                            <div style="font-size: 1.1rem; font-weight: bold; margin-top: 5px;">Мұрат Жақсылық</div>
+                            <div style="font-size: 0.9rem; color: #555;">Информатика мұғалімі</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Introduction -->
+            <div class="slide">
+                <div class="split-layout">
+                    <div>
+                        <h2>Кіріспе: AgroTech 4.0 Революциясы</h2>
+                        <p>Қазіргі таңда әлемдік ауыл шаруашылығы <strong>«Индустрия 4.0»</strong> кезеңіне өтуде. Бұл дегеніміз – адам күшін толықтай роботтар мен жасанды интеллектке алмастыру.</p>
+                        
+                        <div class="info-box">
+                            <strong>Мемлекеттік маңыздылығы:</strong>
+                            <p style="margin: 10px 0 0 0;">ҚР Президентінің Жолдауында: <br><em>«Агроөнеркәсіптік кешенді цифрландыру – су мен жер ресурстарын тиімді пайдаланудың бірден-бір жолы»</em> делінген.</p>
+                        </div>
+                        
+                        <p style="margin-top: 20px;">
+                            Біздің жоба осы стратегиялық міндетті шешуге бағытталған: <strong>қымбат шетелдік жүйелердің отандық, қолжетімді аналогын жасау.</strong>
+                        </p>
+                    </div>
+                    <div class="visual-bg">
+                        <div style="font-size: 6rem;">🌍</div>
+                        <h3>Smart Farming Trends</h3>
+                        <p style="text-align: center; color: #666; margin-top: 10px;">Дәстүрлі егіншіліктен -> <br>Дәлме-дәл егіншілікке (Precision Farming)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Problem Statement -->
+            <div class="slide">
+                <div class="split-layout">
+                    <div>
+                        <h2>Зерттеу Мәселесі (Проблема)</h2>
+                        <p>Біз жергілікті жылыжайларға зерттеу жүргізе келе, келесі түйінді мәселелерді анықтадық:</p>
+                        
+                        <div class="info-box" style="border-left-color: #ef4444; background: #fff1f2;">
+                            <h3 style="color: #ef4444; margin-bottom: 15px;">❌ Негізгі Кемшіліктер:</h3>
+                            <ul class="styled-list">
+                                <li><strong>Су ысырабы:</strong> Қолмен суарғанда су нормадан 40%-ға артық жұмсалады.</li>
+                                <li><strong>Микроклиматтың бұзылуы:</strong> Температураның 2°C-қа ауытқуы өнімділікті 20%-ға төмендетеді.</li>
+                                <li><strong>Энергия шығыны:</strong> Жылыту пештері мен жарық шамдары қажетсіз уақытта қосылып тұрады.</li>
+                                <li><strong>Адам факторы:</strong> Жұмысшының ұмытып кетуі немесе қателігі.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="visual-bg">
+                         <!-- Comparative Chart -->
+                         <svg width="350" height="250" viewBox="0 0 350 250">
+                             <rect x="50" y="50" width="80" height="150" fill="#fca5a5" />
+                             <text x="90" y="220" text-anchor="middle">Дәстүрлі</text>
+                             <text x="90" y="40" text-anchor="middle" fill="#dc2626">Шығын Көп</text>
+
+                             <rect x="220" y="120" width="80" height="80" fill="#86efac" />
+                             <text x="260" y="220" text-anchor="middle">Smart</text>
+                             <text x="260" y="110" text-anchor="middle" fill="#16a34a">Тиімді</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Goal & Objectives -->
+            <div class="slide">
+                <div class="center-layout">
+                    <h2>Жобаның Мақсаты мен Міндеттері</h2>
+                    <p style="max-width: 800px; text-align: center; margin-bottom: 40px;">
+                        <strong>Басты Мақсат:</strong> Адам қатысуынсыз өсімдіктің өсуіне қолайлы микроклиматты қамтамасыз ететін, 
+                        энергиялық тиімді «Ақылды Жылыжай» прототипін жасау.
+                    </p>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; width: 100%;">
+                        <div class="feature-card">
+                            <div class="icon">🔬</div>
+                            <h3>1. Зерттеу</h3>
+                            <p>Өсімдік физиологиясын және Arduino платформасының мүмкіндіктерін зерттеу.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="icon">🛠</div>
+                            <h3>2. Құрастыру</h3>
+                            <p>Электронды схеманы жинау және датчиктерді калибрлеу (баптау).</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="icon">�</div>
+                            <h3>3. Бағдарламалау</h3>
+                            <p>C++ тілінде климатты автоматты реттеу алгоритмін (код) жазу.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Hardware Details -->
+            <div class="slide">
+                <div class="split-layout">
+                    <div>
+                        <h2>Жобаның Аппараттық Қамтамасыз Етілуі</h2>
+                        <p>Жүйе келесі компоненттерден тұрады (Hardware):</p>
+                        <ul class="styled-list">
+                            <li>
+                                <strong>Arduino Uno (ATmega328P):</strong> 
+                                <span style="display:block; font-size: 0.9rem; color: #666;">Жүйенің «миы». 16 МГц жиілікте жұмыс істейді. Барлық датчиктерден сигнал қабылдап, шешім шығарады.</span>
+                            </li>
+                            <li>
+                                <strong>DHT22 (AM2302):</strong> 
+                                <span style="display:block; font-size: 0.9rem; color: #666;">Ауа температурасы (-40~80°C) мен ылғалдылығын (0-100%) сандық түрде өлшейтін жоғары дәлдіктегі сенсор.</span>
+                            </li>
+                            <li>
+                                <strong>Soil Moisture Sensor (YL-69):</strong> 
+                                <span style="display:block; font-size: 0.9rem; color: #666;">Топырақтың электр өткізгіштігі арқылы ылғалдылық деңгейін анықтайды.</span>
+                            </li>
+                            <li>
+                                <strong>Relay Module (5V):</strong> 
+                                <span style="display:block; font-size: 0.9rem; color: #666;">Микроконтроллердің әлсіз сигналы (5V) арқылы қуатты құрылғыларды (220V насос, желдеткіш) басқарады.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="visual-bg" style="background: #27272a;">
+                         <svg width="300" height="200" viewBox="0 0 300 200">
+                             <rect x="20" y="20" width="260" height="160" rx="10" fill="#374151" stroke="#6b7280" stroke-width="2"/>
+                             <text x="40" y="50" fill="white" font-family="monospace">SYSTEM CORE</text>
+                             <rect x="120" y="80" width="60" height="60" fill="#000"/>
+                             <text x="135" y="115" fill="white" font-size="10">MCU</text>
+                             <circle cx="250" cy="50" r="10" fill="#facc15"/>
+                         </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Wiring Diagram -->
+            <div class="slide">
+                <div class="center-layout">
+                    <h2>Схеманы Жалғау Картасы</h2>
+                    <p>Барлық құрылғылар ортақ шина арқылы байланысқан. Төменде порттардың (Pinout) бөлінуі көрсетілген:</p>
+                    
+                    <div style="width: 90%; background: white; padding: 30px; border-radius: 10px; border: 1px solid #ddd; margin-top: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                        <table class="clean-table">
+                            <thead>
+                                <tr>
+                                    <th>Компонент</th>
+                                    <th>Түрі</th>
+                                    <th>Порт (Pin)</th>
+                                    <th>Түсініктеме</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                               <tr>
+                                   <td><strong>DHT22 Sensor</strong></td>
+                                   <td>Digital Input</td>
+                                   <td><span style="background: #dbeafe; padding: 3px 8px; border-radius: 4px; color: #1e3a8a;">D2</span></td>
+                                   <td>Сандық деректерді оқу (OneWire protocol)</td>
+                               </tr>
+                               <tr>
+                                   <td><strong>Soil Sensor</strong></td>
+                                   <td>Analog Input</td>
+                                   <td><span style="background: #fef3c7; padding: 3px 8px; border-radius: 4px; color: #78350f;">A0</span></td>
+                                   <td>Аналогты сигналды (0-1023) оқу</td>
+                               </tr>
+                               <tr>
+                                   <td><strong>Fan Relay</strong></td>
+                                   <td>Digital Output</td>
+                                   <td><span style="background: #d1fae5; padding: 3px 8px; border-radius: 4px; color: #064e3b;">D8</span></td>
+                                   <td>Желдеткішті қосу/өшіру (HIGH/LOW)</td>
+                               </tr>
+                               <tr>
+                                   <td><strong>Pump Relay</strong></td>
+                                   <td>Digital Output</td>
+                                   <td><span style="background: #d1fae5; padding: 3px 8px; border-radius: 4px; color: #064e3b;">D9</span></td>
+                                   <td>Су насосын іске қосу</td>
+                               </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 7: Algorithm Details -->
+            <div class="slide">
+                <div class="split-layout">
+                    <div>
+                        <h2>Жұмыс Алгоритмі (Logic)</h2>
+                        <p>Жүйе үздіксіз циклде (loop) жұмыс істейді. Әр 2 секунд сайын келесі қадамдар орындалады:</p>
+                        
+                        <div class="info-box">
+                            <ul class="styled-list">
+                                <li><strong>1-қадам. Мониторинг:</strong> Датчиктерден (T, H, Moisture) ағымдағы мәндерді оқу.</li>
+                                <li><strong>2-қадам. Анализ:</strong> Алынған мәндерді «Идеалды нормамен» салыстыру.
+                                    <br><em style="font-size:0.9rem; color:#666;">(Мысалы: Norm = 22-28°C)</em>
+                                </li>
+                                <li><strong>3-қадам. Шешім қабылдау:</strong>
+                                    <ul style="margin-left: 20px; font-size:0.9rem; margin-top:5px;">
+                                        <li>Егер T > 30°C → Желдеткішті қосу.</li>
+                                        <li>Егер Ылғалдылық < 40% → Су насосын қосу.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>4-қадам. Хабарлау:</strong> Нәтижені LCD экранға шығару.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="visual-bg">
+                        <!-- Simplified Algorithm Visual -->
+                        <div style="background: white; padding: 20px; border-radius: 10px; width: 250px; text-align: center; border: 2px solid #ddd;">
+                            <div style="padding: 10px; background: #e0f2f1; border-radius: 5px; margin-bottom: 10px;">START Loop</div>
+                            <div style="font-size: 20px;">⬇</div>
+                            <div style="padding: 10px; background: #fff9c4; border-radius: 5px; margin: 10px 0;">Read Sensors</div>
+                            <div style="font-size: 20px;">⬇</div>
+                            <div style="padding: 10px; background: #ffebee; border-radius: 5px; margin: 10px 0;">Check Limits</div>
+                            <div style="font-size: 20px;">⬇</div>
+                            <div style="padding: 10px; background: #e8f5e9; border-radius: 5px; margin-top: 10px;">Control Devices</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Code Explanation -->
+            <div class="slide">
+                <div class="split-layout">
+                    <div>
+                        <h2>Программалық Код (C++)</h2>
+                        <p>Arduino IDE ортасында жазылған кодтың негізгі бөліктері:</p>
+                        <ul class="styled-list">
+                            <li><code>#include &lt;DHT.h&gt;</code>: Датчиктермен жұмыс істеуге арналған дайын кітапхананы қосу.</li>
+                            <li><code>float h = dht.readHumidity();</code>: Ылғалдылықты "бөлшек сан" (float) түрінде жадыға сақтау.</li>
+                            <li><code>if (t > 28) {...}</code>: Шартты оператор. Егер температура 28-ден асса, команда орындалады.</li>
+                            <li><code>digitalWrite(RELAY, LOW);</code>: Релені іске қосу (сигнал беру).</li>
+                        </ul>
+                    </div>
+                    <div style="background: #1e1e1e; padding: 25px; border-radius: 8px; color: #d4d4d4; font-family: 'Consolas', monospace; overflow-y: auto; max-height: 400px; font-size: 0.95rem;">
+<pre><span style="color: #6a9955;">// Smart Greenhouse Firmware v2.1</span>
+<span style="color: #569cd6;">#include</span> <span style="color: #ce9178;">&lt;DHT.h&gt;</span>
+<span style="color: #569cd6;">#define</span> DHTPIN 2
+<span style="color: #569cd6;">#define</span> FAN_PIN 8
+
+DHT dht(DHTPIN, DHT22);
+
+<span style="color: #569cd6;">void</span> <span style="color: #dcdcaa;">setup</span>() {
+  pinMode(FAN_PIN, OUTPUT);
+  dht.begin();
+}
+
+<span style="color: #569cd6;">void</span> <span style="color: #dcdcaa;">loop</span>() {
+  <span style="color: #4ec9b0;">float</span> temp = dht.readTemperature();
+  
+  <span style="color: #c586c0;">if</span> (temp > <span style="color: #b5cea8;">28.0</span>) {
+    digitalWrite(FAN_PIN, HIGH); <span style="color: #6a9955;">// ON</span>
+  } <span style="color: #c586c0;">else</span> {
+    digitalWrite(FAN_PIN, LOW);  <span style="color: #6a9955;">// OFF</span>
+  }
+  delay(<span style="color: #b5cea8;">2000</span>);
+}</pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 9: Results & Analysis -->
+            <div class="slide">
+                <div class="split-layout">
+                    <div>
+                        <h2>Зерттеу Нәтижелері (Эксперимент)</h2>
+                        <p>Біз екі бірдей шағын жылыжайда 14 күндік тәжірибе жүргіздік: біреуі қолмен, екіншісі "Smart" жүйемен басқарылды.</p>
+                        
+                        <div class="info-box" style="margin-top: 30px;">
+                            <h3>📊 Салыстырмалы Көрсеткіштер:</h3>
+                            <ul style="margin-top: 15px; line-height: 1.8;">
+                                <li><strong>Су шығыны:</strong> Smart жүйе <span style="color: var(--primary); font-weight: bold;">35%-ға аз</span> су жұмсады.</li>
+                                <li><strong>Температура:</strong> Тербеліс (ауытқу) небәрі ±0.5°C болды (Қолмен басқаруда ±5°C).</li>
+                                <li><strong>Өсімдік бойы:</strong> Smart жүйедегі қияр көшеттері 15%-ға биік болды.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="visual-bg">
+                        <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 80%;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                                <span>Дәстүрлі</span>
+                                <span style="font-weight: bold; color: #ef4444;">80 Литр</span>
+                            </div>
+                            <div style="width: 100%; height: 20px; background: #eee; border-radius: 10px;">
+                                <div style="width: 100%; height: 100%; background: #ef4444; border-radius: 10px;"></div>
+                            </div>
+                            
+                            <div style="display: flex; justify-content: space-between; margin-top: 30px; margin-bottom: 20px;">
+                                <span>Smart System</span>
+                                <span style="font-weight: bold; color: #15803d;">52 Литр</span>
+                            </div>
+                            <div style="width: 100%; height: 20px; background: #eee; border-radius: 10px;">
+                                <div style="width: 65%; height: 100%; background: #15803d; border-radius: 10px;"></div>
+                            </div>
+                            <div style="text-align: center; margin-top: 20px; font-size: 0.9rem; color: #666;">Суды тұтыну көлемі (14 күн)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 10: Economic Efficiency -->
+            <div class="slide">
+                <div class="split-layout">
+                    <div>
+                        <h2>Экономикалық Тиімділік</h2>
+                        <p>Жобаның коммерциялық әлеуеті өте жоғары, себебі оның өзіндік құны нарықтағы бағадан әлдеқайда төмен.</p>
+                        
+                        <table class="clean-table" style="margin-top: 20px;">
+                            <thead>
+                                <tr>
+                                    <th>№</th>
+                                    <th>Құрал-жабдық атауы</th>
+                                    <th>Бағасы (KZT)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>Arduino Uno (Қытай)</td><td>2 500 ₸</td></tr>
+                                <tr><td>2</td><td>DHT22 + Soil Sensors</td><td>1 500 ₸</td></tr>
+                                <tr><td>3</td><td>Реле модулі (2 канал)</td><td>800 ₸</td></tr>
+                                <tr><td>4</td><td>Су насосы (12V)</td><td>1 200 ₸</td></tr>
+                                <tr><td>5</td><td>Сымдар мен корпус</td><td>1 000 ₸</td></tr>
+                                <tr style="background: #f0fdf4; font-weight: bold; border-top: 2px solid var(--primary);">
+                                    <td colspan="2">ЖАЛПЫ ҚҰНЫ:</td>
+                                    <td style="color: #15803d; font-size: 1.2rem;">7 000 ₸</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="visual-bg" style="background: #fffbeb;">
+                        <div style="text-align: center;">
+                            <h3 style="color: #b45309;">Нарықтық Салыстыру</h3>
+                            <div style="margin: 30px 0; display: flex; flex-direction: column; gap: 20px;">
+                                <div style="padding: 15px; background: white; border: 1px solid #fca5a5; border-radius: 8px;">
+                                    <div style="font-size: 0.8rem; color: #666;">Шетелдік аналог (Israel/Holland)</div>
+                                    <div style="font-size: 1.5rem; color: #ef4444; font-weight: bold;">~150 000 ₸</div>
+                                </div>
+                                <div style="padding: 20px; background: white; border: 2px solid #22c55e; border-radius: 8px; transform: scale(1.1); box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+                                    <div style="font-size: 0.8rem; color: #666;">Біздің Жоба (Smart Agro)</div>
+                                    <div style="font-size: 2rem; color: #15803d; font-weight: bold;">7 000 ₸</div>
+                                    <div style="font-size: 0.8rem; color: #16a34a; font-weight: bold;">20 ЕСЕ АРЗАН!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 11: Conclusion -->
+            <div class="slide">
+                <div class="center-layout">
+                    <h2>Қорытынды</h2>
+                    <p style="max-width: 900px; text-align: justify; margin-bottom: 40px; font-size: 1.2rem;">
+                        Зерттеу жұмысының нәтижесінде біз <strong>Arduino</strong> платформасы ауыл шаруашылығын автоматтандырудың ең тиімді құралы екеніне көз жеткіздік. 
+                        Құрастырылған <strong>«Smart GreenHouse»</strong> жүйесі шағын фермерлерге су мен электр қуатын үнемдеуге, ал ең бастысы — өнімділікті арттыруға мүмкіндік береді.
+                    </p>
+                    
+                    <div style="display: flex; gap: 30px; margin-top: 20px;">
+                         <div class="feature-card" style="width: 280px;">
+                             <h3>🌱 Экология</h3>
+                             <p>Суды тиімді пайдалану арқылы табиғатты қорғаймыз.</p>
+                         </div>
+                         <div class="feature-card" style="width: 280px;">
+                             <h3>🚀 Келешек</h3>
+                             <p>Жобаны Mobile App арқылы қашықтан басқаруға болады.</p>
+                         </div>
+                         <div class="feature-card" style="width: 280px;">
+                             <h3>💰 Эконом</h3>
+                             <p>Өте арзан бағамен кез келген адам қолдана алады.</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Slide 12: End -->
+             <div class="slide">
+                <div class="center-layout">
+                    <h1 style="font-size: 4rem; color: var(--primary); margin-bottom: 20px;">НАЗАРЛАРЫҢЫЗҒА<br>РАҚМЕТ!</h1>
+                    <p style="font-size: 1.5rem; margin-top: 10px; color: #555;">Бектібай Хантемір</p>
+                    <p style="font-size: 1.2rem; margin-top: 5px; color: #777;">9 «Е» Сыныбы</p>
+                    
+                    <div style="margin-top: 50px; padding: 20px; background: #f3f4f6; border-radius: 10px; color: #555;">
+                        Сұрақтарыңыз болса, жауап беруге дайынмын.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="app-footer">
+            <div style="font-weight: bold; color: var(--primary); font-size: 1.1rem;" id="page-counter">1 / 12</div>
+            <div class="controls">
+                <button id="prevBtn">← Артқа</button>
+                <button id="nextBtn">Келесі →</button>
+            </div>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
